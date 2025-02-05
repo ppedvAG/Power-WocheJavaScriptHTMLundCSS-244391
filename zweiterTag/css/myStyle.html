@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einführung CSS</title>
+    <link rel="stylesheet" href="/zweiterTag/css/myStyle.css">
+    <style>
+        p {
+            color: red;
+            font-size: 16px;
+        }
+
+        p {
+            color: aquamarine;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h1 id="site-top">Einführung CSS</h1>
+    <p>Wie bringe ich CSS in mein Dokument?</p>
+    <ul>
+        <li>Inline-Styling</li>
+        <li>Den style-Tag</li>
+        <li>Eine eigene *.css Datei</li>
+    </ul>
+
+    <h2>Inline-Styling</h2>
+    <p style="color:rgba(186, 21, 215, 0.735);font-size: 24px;">Wir sprechen dann vom Inline-Styling wenn Wir
+        das style Attribut im zu stylenden Tag benutzen
+    </p>
+    <h3>Kontrapunkte:</h3>
+    <ul>
+        <li>Mischen von Struktur und Styling</li>
+        <li>Nicht wiederverwendbar, da wir es für jedes Element wieder schreiben müssen</li>
+    </ul>
+    <h3>Positiver Aspekt:</h3>
+    <ul>
+        <li>Wenn etwas extrem schnell geladen werden muss oder selbst mit schlechtem Internet besonders gestylt
+            werden soll, kann man Inline-Styling hinzufügen, da dieses zusammen mit dem HTML-Element gerendert wird</li>
+        <li>Priorität ist höher als vom Style-Sheet oder Tag</li>
+    </ul>
+
+    <h2>Style-Tag</h2>
+    <p>Der Style-Tag wird im head-Tag gesetzt und funktioniert wie ein normales Stylesheet</p>
+    <h3>Kontrapunkte:</h3>
+    <ul>
+        <li>Mischen von CSS und HTML</li>
+        <li>Wiederverwwenbarkeit ist zwar innerhalb des Dokumentes, aber müssten zum teilen mit anderen
+            Elementen immer wieder kopieren
+        </li>
+    </ul>
+    <h3>Positiver Aspekt</h3>
+    <p>Auch hier wird das styling mit dem HTML-Dokument geladen, aber es macht die Datei größer und somit
+        auch langsamer
+    </p>
+
+    <h2>Eigenen CSS-Datei</h2>
+    <p class="cool-paragraph">Gilt als Best Practice</p>
+    <p>Um so vorzugehen brauchen wir einmal eine css-Datei und einen link-Tag der auf diese Seite verweist</p>
+    <h3>Positiver Aspekt:</h3>
+    <ul>
+        <li>Wiederverwwenbarkeit über mehrere HTML Dokumente und Websiten hinweg möglich</li>
+        <li>Klare Trennung der Aufgaben</li>
+    </ul>
+    <h3>Kontrapunkte:</h3>
+    <ul>
+        <li>Langsamere Ladezeit, da zusätzlich zum HTML Dokument auch eine CSS datei geladen werden muss</li>
+    </ul>
+
+</body>
+
+</html>
