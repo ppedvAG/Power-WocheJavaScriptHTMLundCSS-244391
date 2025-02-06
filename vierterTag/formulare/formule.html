@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulare</title>
+</head>
+
+<body>
+    <h2>Beispielsformular</h2>
+
+    <form action="/ersterTag/einführung/index.html">
+
+        <!--Textfeld-->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Dein Name" required>
+        <br><br>
+
+        <!--E-Mail-->
+        <label for="email">E-Mail:</label>
+        <input type="email" placeholder="E-Mail-Adresse" required>
+        <br><br>
+
+        <!--Passwort-->
+        <label for="password">Passwort:</label>
+        <input type="password" required>
+        <br><br>
+
+        <!--Telefonnummer-->
+        <label for="phone">Telefon:</label>
+        <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+        <br><br>
+
+        <!--Datum-->
+        <label for="date">Geburtsdatum:</label>
+        <input type="date">
+        <br><br>
+
+        <!--Radio-Buttons-->
+        <fieldset>
+            <legend>Geschlecht:</legend>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Männlich</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Weiblich</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Andere</label>
+        </fieldset>
+        <br>
+
+        <!--Checkbox-->
+        <input type="checkbox" required>
+        <label for="terms">Ich akzeptiere die AGB</label>
+        <br><br>
+
+        <!--Dropdown-->
+        <label for="country">Land:</label>
+        <select name="country" id="country">
+            <option value="de">Deutschland</option>
+            <option value="at">Österreich</option>
+            <option value="ch">Schweiz</option>
+        </select>
+        <br><br>
+
+        <!--Textarea-->
+        <label for="message">Nachricht:</label>
+        <textarea name="message" id="message" rows="5" cols="20" placeholder="Deine Nachricht..."></textarea>
+        <br><br>
+
+        <!--Datei-Upload-->
+        <label for="file">Datei hochladen:</label>
+        <input type="file">
+        <br><br>
+
+        <!--Farbwähler-->
+        <label for="color">Lieblingsfarbe:</label>
+        <input type="color">
+        <br><br>
+
+        <!--Zahleneingabe-->
+        <label for="number">Lieblingszahl</label>
+        <input type="number" min="1" max="100">
+        <br><br>
+
+        <!--Suchfeld-->
+        <label for="search">Suche:</label>
+        <input type="search" placeholder="Suchbegriff eingeben...">
+        <br><br>
+
+        <!--Senden-Button-->
+        <input type="submit" value="Absenden">
+    </form>
+</body>
+
+</html>
