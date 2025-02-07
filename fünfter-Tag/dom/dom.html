@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Beispiel</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>
+    <script src="/fünfter-Tag/dom/dom.js" defer></script>
+</head>
+
+<body>
+
+    <h1>DOM Manipulation</h1>
+    <p id="greeting">Willkommen! Klicke auf die Buttons, um den DOM zu manipulieren.</p>
+
+    <button id="changeTextButton">Text ändern</button>
+    <button id="addItemButton">Neues Element hinzufügen</button>
+    <button id="removeElementButton">Element entfernen</button>
+    <button id="toggleHighlitghButton">Highlight umschalten</button>
+
+    <div id="listContainer">
+        <ul id="itemList">
+            <li>Erster Punkt</li>
+            <li>Zweiter Punkt</li>
+        </ul>
+    </div>
+
+    <div id="infoBox" class="hidden">
+        <p>Dies ist ein Info-Box.</p>
+    </div>
+
+</body>
+
+</html>
